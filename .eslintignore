@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+npm-debug.log
+package-lock.json
+yarn-error.log
+yarn.lock
+webpack.config.js
+
+
+
+# build
+build/
+
+# IDE
+.idea/

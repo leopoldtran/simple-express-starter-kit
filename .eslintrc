@@ -1,0 +1,43 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+        "eqeqeq": "off",
+        "semi": "off",
+        "indent": [
+            "error",
+            2
+        ],
+        "object-curly-spacing": 0,
+        "import/extensions": 0,
+        "import/prefer-default-export": 0,
+        "import/no-unresolved": 0,
+        "no-unused-vars": [
+            2,
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "import/no-extraneous-dependencies": [
+            2,
+            {
+                "devDependencies": [
+                    "**/graphql/**/*.js",
+                    "**/_test_/**/*.js"
+                ]
+            }
+        ]
+    }
+}
